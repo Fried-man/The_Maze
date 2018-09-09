@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<BODY BGCOLOR="#000000">
+<script type="text/javascript">
+      var hook = true;
+      window.onbeforeunload = function() {
+        if (hook) {
+          return "You have attempted to leave this page.  That is a mistake... unless you have the pin"
+        }
+      }
+      function unhook() {
+        hook=false;
+      }
+    </script>
+<style> 
+/* unvisited link */
+a:link {
+    color: #ffffff;
+}
+
+/* visited link */
+a:visited {
+    color: #ffffff;
+}
+
+/* mouse over link */
+a:hover {
+    color: #B2B2B2;
+}
+/* selected link */
+a:active {
+    color: #ffffff;
+}
+</style>
+<BODY BGCOLOR="000000">
+<title></title>
+</head>
+<body>
+<center><h1><font color="#00FF00">Enter the Code</span></font></h1></center>
+<center><onClick="unhook()"><form action="" method="post" >
+<textarea name="text" id="text" style="width:160px;height:90px;background-color:#000000;color:#00FF00;font:14px/22px cursive;scrollbar-base-color:#000000;">
+...
+</textarea><br /></center>
+<input type="submit" value="Submit" style="background-color:#00FF00;color:#000000;" />
+</form></a>
+
+</body>
+
+
+</html>
